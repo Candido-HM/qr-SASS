@@ -1,0 +1,217 @@
+//Importamos el estilo de letras a utilizar
+@font-face {
+    font-family: Outfit;
+    src: url("/fonts/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
+//Declaracion de variables
+$color-fondo: #D6E2F0;
+$fondo-tarjeta: white;
+$color-title: #1F3251;
+$color-parrafo: #7F8DA3;
+$tipo-letra: Outfit;
+$borde-tarjeta: 1px solid #e0d9d9;
+$esquinas: 16px;
+$alineacion: center;
+$imagen: url('/images/image-qr-code.png');
+
+body {
+    background-color: $color-fondo;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+
+    .contenedor{
+        width: 20%;
+        height: 75%;
+        border: $borde-tarjeta;
+        background-color: $fondo-tarjeta;    
+        border-radius: $esquinas; 
+        overflow: hidden;
+
+        .img{
+            margin: 15px auto;
+            margin-bottom: 0px;
+            width: 90%;
+            height: 49%;
+            border: 1px solid #4986E2;
+            background-image: $imagen;
+            border-radius: 10px;
+            background-size: 100% 100%;
+        }
+
+        .info{
+            width: 90%;
+            height: 45%;
+            margin: 16px auto;
+
+            h4 {
+                color: $color-title;
+                font-family: $tipo-letra;
+                font-size: 20px;
+                text-align: $alineacion;
+            }
+
+            p{
+                color: $color-parrafo;
+                font-family: $tipo-letra;
+                font-size: 16px;
+                text-align: $alineacion;
+            }
+        }
+    }
+}
+
+// ***** Responsive **********
+
+@media (max-width: 1024px){
+
+    main {
+        .contenedor{
+            width: 30%;
+            height: 70%;
+        }
+    }
+}
+
+@media (max-width: 1024px) and 
+        (max-height: 1366px){
+
+    main {
+        .contenedor{
+            width: 30%;
+            height: 45%;
+        }
+    }
+}
+
+@media (max-width: 800px){
+
+    main {
+        .contenedor{
+            width: 45%;
+            height: 42%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+
+    main {
+        .contenedor{
+            width: 40%;
+            height: 45%;
+        }
+    }
+}
+
+@media (max-width: 670px){
+
+    body{
+        height: 100vh;
+    }
+    main {
+        //height: 360px;
+        .contenedor{
+            width: 40%;
+            height: 70%;
+        }
+    }
+}
+
+@media (max-width: 618px){
+
+    main {
+        //height: 360px;
+        .contenedor{
+            width: 43%;
+            height: 70%;
+        }
+    }
+}
+
+@media (max-width: 571px){
+
+    main {
+        .contenedor{
+            width: 43%;
+            height: 75%;
+        }
+    }
+}
+
+
+@media (max-width: 540px){
+
+    main {
+        .contenedor{
+            width: 46%;
+        }
+    }
+}
+
+@media (max-width: 470px){
+
+    main {
+        .contenedor{
+            width: 50%;
+            height: 80%;
+        }
+    }
+}
+
+@media (max-width: 433px){
+
+    main {
+        .contenedor{
+            width: 58%;
+            height: 80%;
+        }
+    }
+}
+
+@media (max-width: 375px){
+
+    main {
+        .contenedor{
+            width: 65%;
+            height: 55%;
+        }
+    }
+}
+
+@media (max-width: 370px){
+
+    main {
+        .contenedor{
+            width: 65%;
+            height: 80%;
+        }
+    }
+}
+
+@media (max-width: 321px){
+
+    main {
+        .contenedor{
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 270px){
+
+    main {
+        .contenedor{
+            width: 85%;
+        }
+    }
+}
